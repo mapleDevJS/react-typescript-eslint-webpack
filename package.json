@@ -49,8 +49,8 @@
     "webpack-dev-server": "^3.11.1"
   },
   "scripts": {
-    "start": "webpack serve --config webpack.dev.config.ts",
-    "build": "webpack --config webpack.prod.config.ts",
+    "start": "webpack serve --config webpack.config.ts",
+    "build": "webpack --config webpack.config.ts",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "prettify": "prettier --write \"src/**/*.{ts,tsx}\"",
