@@ -45,9 +45,6 @@ importers:
       '@types/webpack':
         specifier: ^5.28.5
         version: 5.28.5(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))
-      '@types/webpack-dev-server':
-        specifier: 4.7.2
-        version: 4.7.2(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.9.0
         version: 7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -116,7 +113,7 @@ importers:
         version: 5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)
       webpack-dev-server:
         specifier: ^5.0.4
-        version: 5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
+        version: 5.0.4(webpack-cli@5.1.4)(webpack@5.91.0)
 
 packages:
 
@@ -981,10 +978,6 @@ packages:
 
   '@types/sockjs@0.3.36':
     resolution: {integrity: sha512-MK9V6NzAS1+Ud7JV9lJLFqW85VbC9dq3LmwZCuBe4wBDgKC0Kj/jd8Xl+nSviU+Qc3+m7umHHyHg//2KSa0a0Q==}
-
-  '@types/webpack-dev-server@4.7.2':
-    resolution: {integrity: sha512-Y3p0Fmfvp0MHBDoCzo+xFJaWTw0/z37mWIo6P15j+OtmUDLvznJWdZNeD7Q004R+MpQlys12oXbXsrXRmxwg4Q==}
-    deprecated: This is a stub types definition. webpack-dev-server provides its own type definitions, so you do not need this installed.
 
   '@types/webpack@5.28.5':
     resolution: {integrity: sha512-wR87cgvxj3p6D0Crt1r5avwqffqPXUkNlnQ1mjU93G7gCuFjufZR4I6j8cz5g1F1tTYpfOOFvly+cmIQwL9wvw==}
@@ -4611,17 +4604,6 @@ snapshots:
     dependencies:
       '@types/node': 20.12.12
 
-  '@types/webpack-dev-server@4.7.2(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))':
-    dependencies:
-      webpack-dev-server: 5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
-    transitivePeerDependencies:
-      - bufferutil
-      - debug
-      - supports-color
-      - utf-8-validate
-      - webpack
-      - webpack-cli
-
   '@types/webpack@5.28.5(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))':
     dependencies:
       '@types/node': 20.12.12
@@ -4812,12 +4794,12 @@ snapshots:
       webpack: 5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))
       webpack-cli: 5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)
 
-  '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack-dev-server@5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))':
+  '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack-dev-server@5.0.4(webpack-cli@5.1.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))':
     dependencies:
       webpack: 5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))
       webpack-cli: 5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)
     optionalDependencies:
-      webpack-dev-server: 5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
+      webpack-dev-server: 5.0.4(webpack-cli@5.1.4)(webpack@5.91.0)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -7311,7 +7293,7 @@ snapshots:
       '@discoveryjs/json-ext': 0.5.7
       '@webpack-cli/configtest': 2.1.1(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
       '@webpack-cli/info': 2.0.2(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
-      '@webpack-cli/serve': 2.0.5(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack-dev-server@5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
+      '@webpack-cli/serve': 2.0.5(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack-dev-server@5.0.4(webpack-cli@5.1.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
       colorette: 2.0.20
       commander: 10.0.1
       cross-spawn: 7.0.3
@@ -7323,7 +7305,7 @@ snapshots:
       webpack: 5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))
       webpack-merge: 5.10.0
     optionalDependencies:
-      webpack-dev-server: 5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0)))
+      webpack-dev-server: 5.0.4(webpack-cli@5.1.4)(webpack@5.91.0)
 
   webpack-dev-middleware@7.2.1(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))):
     dependencies:
@@ -7336,7 +7318,7 @@ snapshots:
     optionalDependencies:
       webpack: 5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))
 
-  webpack-dev-server@5.0.4(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))(webpack@5.91.0(webpack-cli@5.1.4(webpack-dev-server@5.0.4)(webpack@5.91.0))):
+  webpack-dev-server@5.0.4(webpack-cli@5.1.4)(webpack@5.91.0):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
