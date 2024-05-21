@@ -14,5 +14,6 @@
     "jsx": "react",
     "typeRoots": ["src/@types", "./node_modules/@types"]
   },
-  "include": ["src", "src/@types"]
+  "include": ["src", "src/@types"],
+  "exclude": ["webpack.config.ts"]
 }
