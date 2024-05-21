@@ -3,14 +3,15 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
 import { Configuration, HotModuleReplacementPlugin } from 'webpack';
+import { Configuration as DevServerConfiguration } from 'webpack-dev-server';
 
-interface ConfigurationDevServer extends Configuration {
-    devServer?: any;
+interface WebpackDevServerConfiguration extends Configuration {
+    devServer?: DevServerConfiguration;
 }
 
 const isProd = process.env.NODE_ENV === "production";
 
-const config: ConfigurationDevServer = {
+const config: WebpackDevServerConfiguration = {
     mode: isProd ? 'production' : 'development',
     output: {
         path: path.resolve(__dirname, 'build'),
